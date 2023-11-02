@@ -3,7 +3,7 @@ var router = express.Router();
 var topstory = require("../controller/topstories");
 
 router.get(
-  "/top-stories",
+  "/top-stories/:section",
   topstory.getTopstories  
 );
 
